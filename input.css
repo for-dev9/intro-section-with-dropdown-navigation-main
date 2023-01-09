@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen(lg) {
+  .bg-hero {
+    content: url('/images/image-hero-desktop.png');
+  }
+}
+
+@layer components {
+  .menuDesktop {
+    @apply group-hover:text-almostBlack;
+  }
+
+  .menuArrowDesktop {
+    @apply group-hover:stroke-almostBlack;
+  }
+}
+
+.menuIconRotate {
+  @apply -rotate-180 duration-300;
+}
+
+html {
+  font-size: 16px;
+}
