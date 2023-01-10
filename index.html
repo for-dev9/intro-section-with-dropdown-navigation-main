@@ -33,11 +33,14 @@
         <!-- Menu -->
         <div class="flex flex-1">
           <!-- Hamburger -->
-          <div
-            id="mobileMenu"
-            class="flex justify-end w-full cursor-pointer absolute top-5 right-3 lg:hidden"
-          >
-            <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex justify-end w-full absolute top-5 right-3 lg:hidden">
+            <svg
+              class="cursor-pointer"
+              id="mobileMenu"
+              width="32"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g fill="#151515" fill-rule="evenodd">
                 <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
               </g>
@@ -181,7 +184,7 @@
 
                 <div
                   id="subMenu2"
-                  class="flex flex-col space-y-2 w-32 h-auto top-9 left-0 py-2 subMenu lg:absolute lg:rounded-lg lg:shadow-md lg:bg-white"
+                  class="flex hidden flex-col space-y-2 w-32 h-auto top-9 left-0 py-2 subMenu lg:absolute lg:rounded-lg lg:shadow-md lg:bg-white"
                 >
                   <a href="#" class="lg:hover:bg-slate-100 px-6 py-1"
                     >History</a
