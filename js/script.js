@@ -28,9 +28,11 @@ function showHideMenu() {
 }
 
 function onMenuClick(e) {
-  const classString = e.target.getAttribute('data-target');
-  document.getElementById(classString).classList.toggle('hidden');
-  document.getElementById('menuIcon1').classList.toggle('menuIconRotate');
+  const subMenuID = e.target.getAttribute('data-target');
+  document.getElementById(subMenuID).classList.toggle('hidden');
+
+  const iconID = e.target.getAttribute('menu-icon');
+  document.getElementById(iconID).classList.toggle('menuIconRotate');
 }
 
 function onMenuFocusout(e) {
