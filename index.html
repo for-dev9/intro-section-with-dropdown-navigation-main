@@ -21,125 +21,178 @@
   </head>
   <body class="bg-almostWhite">
     <!-- Nav Section -->
-    <nav class="container mx-auto max-w-7xl">
+    <nav class="container mx-auto max-w-7xl mt-2">
       <div
-        class="flex items-center justify-between my-4 text-mediumGray text-sm"
+        class="flex space-x-10 items-center justify-start my-4 text-mediumGray text-base lg:text-sm"
       >
-        <!-- Nav Left Section -->
-        <div class="flex space-x-14 px-2 items-start justify-center">
-          <!-- Logo -->
+        <!-- Logo -->
+        <div>
           <img src="images/logo.svg" alt="snap logo" />
+        </div>
 
-          <!-- Desktop menu -->
-          <div class="flex space-x-6 items-start justify-center">
+        <!-- Menu -->
+        <div class="flex flex-1">
+          <div class="flex space-x-14 px-2 items-center justify-between w-full">
+            <!-- Desktop menu -->
             <div
-              class="relative flex items-center space-x-1 group menu"
-              tabindex="1"
+              class="flex flex-col p-5 h-full space-y-5 top-0 right-0 w-[200px] absolute bg-orange-100 items-start lg:bg-transparent lg:static lg:flex-row lg:space-x-10 lg:justify-center lg:p-0 lg:space-y-0 lg:w-full lg:items-center"
             >
-              <button class="menuDesktop" data-target="subMenu1">
-                Features
-              </button>
-              <svg
-                id="menuIcon1"
-                data-target="subMenu1"
-                class="duration-300 menuIcon"
-                width="10"
-                height="6"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="relative flex-col items-center space-x-1 group menu lg:flex-row"
+                tabindex="1"
               >
-                <path
-                  class="menuArrowDesktop"
-                  stroke="#686868"
-                  stroke-width="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+                <div class="flex items-center space-x-1">
+                  <button class="menuDesktop" data-target="subMenu1">
+                    Features
+                  </button>
+                  <svg
+                    id="menuIcon1"
+                    data-target="subMenu1"
+                    class="duration-300 menuIcon"
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="menuArrowDesktop"
+                      stroke="#686868"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  id="subMenu1"
+                  class="flex hidden flex-col space-y-2 w-36 h-auto top-9 right-0 py-2 subMenu lg:absolute lg:rounded-lg lg:shadow-md lg:bg-white"
+                >
+                  <a href="#">
+                    <div
+                      class="flex space-x-3 items-center py-1 px-5 cursor-pointer lg:hover:bg-slate-100"
+                    >
+                      <span class="w-4"
+                        ><img src="images/icon-todo.svg" alt=""
+                      /></span>
+                      <span>Todo List</span>
+                    </div></a
+                  >
+
+                  <a href="#">
+                    <div
+                      class="flex space-x-3 items-center py-1 px-5 cursor-pointer lg:hover:bg-slate-100"
+                    >
+                      <span class="w-4"
+                        ><img src="images/icon-calendar.svg" alt=""
+                      /></span>
+                      <span>Calendar</span>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div
+                      class="flex space-x-3 items-center py-1 px-5 cursor-pointer lg:hover:bg-slate-100"
+                    >
+                      <span class="w-4"
+                        ><img src="images/icon-reminders.svg" alt=""
+                      /></span>
+                      <span>Reminders</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div
+                      class="flex space-x-3 items-center py-1 px-5 cursor-pointer lg:hover:bg-slate-100"
+                    >
+                      <span class="w-4"
+                        ><img src="images/icon-planning.svg" alt=""
+                      /></span>
+                      <span>Planning</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Company Menu -->
+              <div
+                class="relative flex-col items-center space-x-1 group menu lg:flex-row"
+                tabindex="2"
+              >
+                <div class="flex items-center space-x-1">
+                  <button class="menuDesktop" data-target="subMenu2">
+                    Company
+                  </button>
+                  <svg
+                    id="menuIcon2"
+                    data-target="subMenu2"
+                    class="duration-300 menuIcon"
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="menuArrowDesktop"
+                      stroke="#686868"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  id="subMenu2"
+                  class="flex flex-col space-y-2 w-36 h-auto top-9 left-0 py-2 subMenu lg:absolute lg:rounded-lg lg:shadow-md lg:bg-white"
+                >
+                  <a href="#" class="lg:hover:bg-slate-100 px-6 py-1"
+                    >History</a
+                  >
+                  <a href="#" class="lg:hover:bg-slate-100 px-6 py-1"
+                    >Our Team</a
+                  >
+                  <a href="#" class="lg:hover:bg-slate-100 px-6 py-1">Blog</a>
+                </div>
+              </div>
+
+              <!-- Carrers Menu -->
+              <div
+                class="relative flex-col items-center space-x-1 group menu lg:flex-row"
+                tabindex="3"
+              >
+                <div class="flex items-center space-x-1">
+                  <button class="menuDesktop">Carrers</button>
+                </div>
+              </div>
+
+              <!-- About Menu -->
+              <div
+                class="relative flex-col items-center space-x-1 group menu lg:flex-row"
+                tabindex="4"
+              >
+                <div class="flex items-center space-x-1">
+                  <button class="menuDesktop">About</button>
+                </div>
+              </div>
+
+              <div class="hidden lg:flex-1 lg:flex"></div>
 
               <div
-                id="subMenu1"
-                class="flex hidden flex-col space-y-2 absolute bg-white w-36 h-auto top-9 right-0 rounded-lg shadow-md py-2 subMenu"
+                class="flex flex-col text-sm w-full lg:flex-row lg:space-x-6 lg:w-auto"
               >
-                <a href="#">
-                  <div
-                    class="flex space-x-3 items-center py-1 px-5 cursor-pointer hover:bg-slate-100"
-                  >
-                    <span class="w-4"
-                      ><img src="images/icon-todo.svg" alt=""
-                    /></span>
-                    <span>Todo List</span>
-                  </div></a
+                <button
+                  class="px-3 py-2 hover:border-almostBlack hover:text-almostBlack lg:py-2"
                 >
-
-                <a href="#">
-                  <div
-                    class="flex space-x-3 items-center py-1 px-5 cursor-pointer hover:bg-slate-100"
-                  >
-                    <span class="w-4"
-                      ><img src="images/icon-calendar.svg" alt=""
-                    /></span>
-                    <span>Calendar</span>
-                  </div>
-                </a>
-
-                <a href="#">
-                  <div
-                    class="flex space-x-3 items-center py-1 px-5 cursor-pointer hover:bg-slate-100"
-                  >
-                    <span class="w-4"
-                      ><img src="images/icon-reminders.svg" alt=""
-                    /></span>
-                    <span>Reminders</span>
-                  </div>
-                </a>
-                <a href="#">
-                  <div
-                    class="flex space-x-3 items-center py-1 px-5 cursor-pointer hover:bg-slate-100"
-                  >
-                    <span class="w-4"
-                      ><img src="images/icon-planning.svg" alt=""
-                    /></span>
-                    <span>Planning</span>
-                  </div>
-                </a>
+                  Login
+                </button>
+                <button
+                  class="border border-mediumGray rounded-lg px-4 py-1 hover:border-almostBlack hover:text-almostBlack"
+                >
+                  Register
+                </button>
               </div>
             </div>
 
-            <div
-              class="relative flex items-center space-x-1 group"
-              tabindex="2"
-            >
-              <div class="menuDesktop">Company</div>
-              <svg
-                class="group-focus:-rotate-180 duration-300"
-                width="10"
-                height="6"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="menuArrowDesktop"
-                  stroke="#686868"
-                  stroke-width="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
-            </div>
+            <!-- Nav Right Section -->
           </div>
-        </div>
-
-        <!-- Nav Right Section -->
-        <div class="flex space-x-6">
-          <button
-            class="px-3 py-2 hover:border-almostBlack hover:text-almostBlack"
-          >
-            Login
-          </button>
-          <button
-            class="border border-mediumGray rounded-lg px-4 py-1 hover:border-almostBlack hover:text-almostBlack"
-          >
-            Register
-          </button>
         </div>
       </div>
     </nav>
