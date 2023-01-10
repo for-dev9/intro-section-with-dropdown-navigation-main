@@ -32,9 +32,10 @@
 
         <!-- Menu -->
         <div class="flex flex-1">
+          <!-- Hamburger -->
           <div
             id="mobileMenu"
-            class="flex justify-end w-full cursor-pointer absolute top-4 right-3 lg:hidden"
+            class="flex justify-end w-full cursor-pointer absolute top-5 right-3 lg:hidden"
           >
             <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
               <g fill="#151515" fill-rule="evenodd">
@@ -42,14 +43,19 @@
               </g>
             </svg>
           </div>
+
+          <!-- Menu container -->
           <div class="flex space-x-14 px-2 items-center justify-between w-full">
             <!-- menu -->
             <div
               id="mobileMenuDiv"
               class="duration-200 overflow-x-hidden transition-all flex flex-col p-5 h-full z-20 space-y-5 top-0 -right-full w-[230px] fixed bg-white items-start lg:bg-transparent lg:static lg:flex-row lg:space-x-10 lg:justify-center lg:p-0 lg:space-y-0 lg:w-full lg:items-center lg:z-0 lg:overflow-x-visible"
             >
-              <!-- Close menu -->
-              <div id="closeMobileMenu" class="fixed top-4 right-3 hidden">
+              <!-- Close Button -->
+              <div
+                id="closeMobileMenu"
+                class="fixed top-4 right-3 hidden cursor-pointer"
+              >
                 <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
                   <g fill="#151515" fill-rule="evenodd">
                     <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
