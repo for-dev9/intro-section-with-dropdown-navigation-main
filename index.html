@@ -26,12 +26,12 @@
         class="flex items-center justify-between my-4 text-mediumGray text-sm"
       >
         <!-- Nav Left Section -->
-        <div class="flex space-x-14 items-start justify-center">
+        <div class="flex space-x-14 px-2 items-start justify-center">
           <!-- Logo -->
           <img src="images/logo.svg" alt="snap logo" />
 
           <!-- Desktop menu -->
-          <div class="flex space-x-6 items-start justify-center">
+          <div class="hidden flex space-x-6 items-start justify-center">
             <div
               class="relative flex items-center space-x-1 group menu"
               tabindex="1"
@@ -139,16 +139,16 @@
       </div>
     </nav>
 
-    <section id="hero" class="mt-16">
+    <section id="hero" class="lg:mt-16">
       <div
-        class="container max-w-6xl mx-auto px-2 flex flex-col-reverse items-center justify-between space-y-10 lg:flex-row lg:space-y-0 lg:space-x-20 lg:items-start"
+        class="max-w-6xl mx-auto px-2 flex flex-col-reverse justify-between space-y-5 lg:flex-row lg:space-y-0 lg:space-x-24 lg:items-end"
       >
         <!-- Content -->
         <div
-          class="flex flex-col items-center pt-14 pb-12 space-y-5 lg:w-1/2 lg:items-start"
+          class="flex flex-col space-y-5 items-center lg:w-1/2 lg:justify-start lg:items-start"
         >
           <h1
-            class="text-5xl font-bold lg:text-[5rem] lg:leading-none lg:pt-14 lg:pb-8"
+            class="mt-14 text-4xl font-bold text-center lg:text-[4.8rem] lg:text-left lg:leading-none lg:pt-14 lg:pb-8 lg:mt-0"
           >
             Make remote work
           </h1>
@@ -162,22 +162,29 @@
           >
             Learn more
           </button>
+
+          <div
+            class="pt-10 px-2 flex items-center justify-between w-full lg:items-start lg:pt-28"
+          >
+            <div><img src="images/client-databiz.svg" alt="" /></div>
+            <div><img src="images/client-audiophile.svg" alt="" /></div>
+            <div><img src="images/client-meet.svg" alt="" /></div>
+            <div><img src="images/client-maker.svg" alt="" /></div>
+          </div>
         </div>
 
         <!-- Img -->
-        <div class="lg:w-1/2">
+        <div class="flex flex-col items-center lg:w-1/2">
           <img
             src="images/image-hero-mobile.png"
-            class="bg-hero max-w-lg"
+            class="bg-hero lg:max-w-lg"
             alt=""
           />
         </div>
       </div>
     </section>
 
-    <!-- Features Company Careers About Login Register Make remote work Learn more
-
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
