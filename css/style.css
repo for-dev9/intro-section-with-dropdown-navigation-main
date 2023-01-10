@@ -662,6 +662,30 @@ video {
   width: 230px;
 }
 
+.w-\[240px\] {
+  width: 240px;
+}
+
+.w-\[290px\] {
+  width: 290px;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1068,6 +1092,14 @@ html {
     margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:overflow-visible {
+    overflow: visible;
+  }
+
+  .lg\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
   .lg\:rounded-lg {
     border-radius: 0.5rem;
   }
@@ -1100,6 +1132,10 @@ html {
 
   .lg\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-left {
