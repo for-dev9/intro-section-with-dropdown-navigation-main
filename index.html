@@ -46,7 +46,7 @@
             <!-- menu -->
             <div
               id="mobileMenuDiv"
-              class="duration-200 transition-all flex flex-col p-5 h-full z-10 space-y-5 top-0 -right-full w-[200px] fixed bg-orange-100 items-start lg:bg-transparent lg:static lg:flex-row lg:space-x-10 lg:justify-center lg:p-0 lg:space-y-0 lg:w-full lg:items-center lg:z-0"
+              class="duration-200 overflow-x-hidden transition-all flex flex-col p-5 h-full z-20 space-y-5 top-0 -right-full w-[230px] fixed bg-white items-start lg:bg-transparent lg:static lg:flex-row lg:space-x-10 lg:justify-center lg:p-0 lg:space-y-0 lg:w-full lg:items-center lg:z-0"
             >
               <!-- Close menu -->
               <div id="closeMobileMenu" class="fixed top-4 right-3 hidden">
@@ -265,6 +265,12 @@
         </div>
       </div>
     </section>
+
+    <div
+      id="modal"
+      class="hidden fixed z-10 top-0 left-0 h-full w-full bg-black opacity-70"
+      onclick="showHideMenu();"
+    ></div>
 
     <!-- <div class="attribution">
       Challenge by

@@ -12,17 +12,19 @@ menus.forEach((menu) => menu.addEventListener('click', onMenuClick));
 menus.forEach((menu) => menu.addEventListener('focusout', onMenuFocusout));
 
 function hamburgerClick() {
-  mobileMenuDiv.classList.toggle('-right-full');
-  mobileMenuDiv.classList.toggle('right-0');
-  hamburger.classList.toggle('hidden');
-  closeMobileMenu.classList.toggle('hidden');
+  showHideMenu();
 }
 
 function closeMobileMenuClick() {
+  showHideMenu();
+}
+
+function showHideMenu() {
   mobileMenuDiv.classList.toggle('-right-full');
   mobileMenuDiv.classList.toggle('right-0');
   hamburger.classList.toggle('hidden');
   closeMobileMenu.classList.toggle('hidden');
+  document.getElementById('modal').classList.toggle('hidden');
 }
 
 function onMenuClick(e) {
