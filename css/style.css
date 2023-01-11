@@ -552,7 +552,7 @@ video {
   color: hsl(0 0% 8% / var(--tw-text-opacity));
 }
 
-.group:hover .menuArrowDesktop {
+.group:hover .menuArrow {
   stroke: hsl(0, 0%, 8%);
 }
 
@@ -624,6 +624,10 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -704,6 +708,10 @@ video {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -882,6 +890,16 @@ video {
 .text-almostWhite {
   --tw-text-opacity: 1;
   color: hsl(0 0% 98% / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-\[\#336699\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 102 153 / var(--tw-text-opacity));
 }
 
 .opacity-70 {

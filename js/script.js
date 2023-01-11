@@ -12,12 +12,12 @@ closeMobileMenu.addEventListener('click', closeMobileMenuClick);
 menus.forEach((menu) => menu.addEventListener('click', onMenuClick));
 menus.forEach((menu) => menu.addEventListener('focusout', onMenuFocusout));
 
-window.onresize = reportWindowSize;
-function reportWindowSize() {
+window.onresize = clearMenu;
+function clearMenu() {
   if (!modal.classList.contains('hidden')) {
-    // modal.classList.add('hidden');
-    // mobileMenuDiv.classList.add('-right-full');
-    // closeMobileMenu.classList.add('hidden');
+    showHideMenu();
+    subMenus.forEach((e) => e.classList.add('hidden'));
+    menuIcons.forEach((e) => e.classList.remove('menuIconRotate'));
   }
 }
 
@@ -49,7 +49,7 @@ function onMenuClick(e) {
   }, 90);
 }
 
-function onMenuFocusout(e) {
+function onMenuFocusout() {
   if (
     window.getComputedStyle(document.getElementById('hamBurgerDiv'))
       .visibility === 'hidden'
