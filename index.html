@@ -33,7 +33,10 @@
         <!-- Menu -->
         <div class="flex flex-1">
           <!-- Hamburger -->
-          <div class="flex justify-end w-full absolute top-5 right-3 lg:hidden">
+          <div
+            id="hamBurgerDiv"
+            class="flex justify-end w-full absolute top-5 right-3 lg:invisible"
+          >
             <svg
               class="cursor-pointer"
               id="mobileMenu"
@@ -71,34 +74,39 @@
 
               <!-- Features Menu -->
               <div
-                class="relative flex-col items-center space-x-1 pt-7 group menu lg:flex-row lg:pt-0"
+                class="relative flex-col items-center space-x-1 pt-7 group lg:flex-row lg:pt-0"
                 tabindex="1"
               >
-                <div class="flex items-center space-x-1">
+                <div
+                  class="flex items-center space-x-1 menu"
+                  data-target="subMenu1"
+                  menu-icon="menuIcon1"
+                >
                   <button
-                    class="menuDesktop"
+                    class="menuDesktop flex space-x-1 items-center"
                     data-target="subMenu1"
                     menu-icon="menuIcon1"
                   >
-                    Features
+                    <span>Features</span>
+
+                    <svg
+                      id="menuIcon1"
+                      data-target="subMenu1"
+                      menu-icon="menuIcon1"
+                      class="menuIcon"
+                      width="10"
+                      height="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="menuArrowDesktop"
+                        stroke="#686868"
+                        stroke-width="1.5"
+                        fill="none"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
                   </button>
-                  <svg
-                    id="menuIcon1"
-                    data-target="subMenu1"
-                    menu-icon="menuIcon1"
-                    class="duration-300 menuIcon"
-                    width="10"
-                    height="6"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="menuArrowDesktop"
-                      stroke="#686868"
-                      stroke-width="1.5"
-                      fill="none"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
                 </div>
 
                 <div
@@ -137,6 +145,7 @@
                       <span>Reminders</span>
                     </div>
                   </a>
+
                   <a href="#">
                     <div
                       class="flex space-x-3 items-center py-1 px-5 cursor-pointer lg:hover:bg-slate-100"
@@ -152,34 +161,38 @@
 
               <!-- Company Menu -->
               <div
-                class="relative flex-col items-center space-x-1 group menu lg:flex-row"
+                class="relative flex-col items-center space-x-1 group lg:flex-row"
                 tabindex="2"
               >
-                <div class="flex items-center space-x-1">
+                <div
+                  class="flex items-center space-x-1 menu"
+                  data-target="subMenu2"
+                  menu-icon="menuIcon2"
+                >
                   <button
-                    class="menuDesktop"
+                    class="menuDesktop flex space-x-1 items-center"
                     data-target="subMenu2"
                     menu-icon="menuIcon2"
                   >
-                    Company
+                    <span>Company</span>
+                    <svg
+                      id="menuIcon2"
+                      data-target="subMenu2"
+                      menu-icon="menuIcon2"
+                      class="menuIcon"
+                      width="10"
+                      height="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="menuArrowDesktop"
+                        stroke="#686868"
+                        stroke-width="1.5"
+                        fill="none"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
                   </button>
-                  <svg
-                    id="menuIcon2"
-                    data-target="subMenu2"
-                    menu-icon="menuIcon2"
-                    class="duration-300 menuIcon"
-                    width="10"
-                    height="6"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="menuArrowDesktop"
-                      stroke="#686868"
-                      stroke-width="1.5"
-                      fill="none"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
                 </div>
 
                 <div

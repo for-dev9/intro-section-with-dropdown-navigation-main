@@ -19,7 +19,7 @@
 }
 
 .menuIconRotate {
-  @apply -rotate-180 duration-300;
+  @apply -rotate-180 duration-100;
 }
 
 html {

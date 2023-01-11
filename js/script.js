@@ -38,18 +38,25 @@ function showHideMenu() {
 }
 
 function onMenuClick(e) {
-  const subMenuID = e.target.getAttribute('data-target');
-  document.getElementById(subMenuID).classList.toggle('hidden');
+  const subMenuID = e.target.parentElement.getAttribute('data-target');
+  const iconID = e.target.parentElement.getAttribute('menu-icon');
 
-  const iconID = e.target.getAttribute('menu-icon');
-  document.getElementById(iconID).classList.toggle('menuIconRotate');
+  setTimeout(function () {
+    if (subMenuID)
+      document.getElementById(subMenuID).classList.toggle('hidden');
+    if (iconID)
+      document.getElementById(iconID).classList.toggle('menuIconRotate');
+  }, 90);
 }
 
 function onMenuFocusout(e) {
-  if (!hamburger.classList.contains('absolute')) {
+  if (
+    window.getComputedStyle(document.getElementById('hamBurgerDiv'))
+      .visibility === 'hidden'
+  ) {
     setTimeout(function () {
       subMenus.forEach((e) => e.classList.add('hidden'));
       menuIcons.forEach((e) => e.classList.remove('menuIconRotate'));
-    }, 100);
+    }, 80);
   }
 }
